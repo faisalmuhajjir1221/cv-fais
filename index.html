@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV Fais Al Muhajjir – 3D Interactive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff6f00, #ffb74d, #ffe0b2);
+      font-family: 'Poppins', sans-serif;
+      color: #2c2c2c;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 40px 15px;
+      perspective: 1000px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .container * {
+      transform-style: preserve-3d;
+      transition: transform 0.35s cubic-bezier(.3,1.6,.4,.9), text-shadow 0.35s;
+    }
+
+    .container *:hover {
+      transform: translateZ(18px) scale(1.03);
+      text-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    }
+
+    .photo {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .photo img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ff9800;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      color: #e65100;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+      flex-wrap: wrap;
+    }
+
+    h1 span {
+      display: inline-block;
+      animation: floatLetters 3s ease-in-out infinite;
+    }
+
+    .section h2 {
+      color: #ff6f00;
+      font-size: 1.5em;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #ffc107;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .section h2 span {
+      display: inline-block;
+      animation: floatLetters 3s ease-in-out infinite;
+    }
+
+    @keyframes floatLetters {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0px); }
+    }
+
+    p.center {
+      text-align: center;
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .section p, .section ul {
+      margin-left: 10px;
+      font-size: 1em;
+    }
+
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #ff6f00;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 28px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      .section h2 {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo">
+      <img src="foto.jpg" alt="Fais Al Muhajjir">
+    </div>
+    <h1>
+      <span>F</span><span>a</span><span>i</span><span>s</span> <span>A</span><span>l</span> <span>M</span><span>u</span><span>h</span><span>a</span><span>j</span><span>j</span><span>i</span><span>r</span>
+    </h1>
+    <p class="center">Sentul, Bogor, Jawa Barat | <a href="mailto:faisalmuhajjir34@gmail.com">faisalmuhajjir34@gmail.com</a> | <a href="http://wa.link/85j74p" target="_blank">WhatsApp</a></p>
+
+    <div class="section">
+      <h2>👤 Profil Singkat</h2>
+      <p>Saya adalah mahasiswa aktif di Universitas Tazkia Bogor, yang sekarang mengambil prodi Manajemen Bisnis Syariah. Tujuan saya mengambil prodi ini karena saya sudah tertarik lama dengan dunia bisnis. Selain karena keinginan diri sendiri, faktor dorongan keluarga juga membuat saya yakin untuk terjun di dunia bisnis.</p>
+    </div>
+
+    <div class="section">
+      <h2>🎓 Pendidikan</h2>
+      <p><strong>🏛 Universitas Tazkia</strong> – Manajemen Bisnis Syariah</p>
+    </div>
+
+    <div class="section">
+      <h2>🛠 Kemampuan</h2>
+      <ul>
+        <li>🗣 Komunikasi Efektif</li>
+        <li>🔄 Adaptabilitas</li>
+        <li>📊 Analisis dan Pengambilan Keputusan</li>
+        <li>🧠 Dasar-dasar Manajemen Syariah</li>
+        <li>🖥 Microsoft Word & Excel</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🔗 Media Sosial</h2>
+      <p>📷 Instagram: <a href="https://www.instagram.com/fayss00" target="_blank">@fayss00</a></p>
+      <p>📲 WhatsApp: <a href="http://wa.link/85j74p" target="_blank">Klik untuk menghubungi</a></p>
+    </div>
+  </div>
+</body>
+</html>
